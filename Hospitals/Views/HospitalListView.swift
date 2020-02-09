@@ -22,8 +22,11 @@ struct HospitalListView: View {
                             // search query filter
                             self.searchQuery.isEmpty ? true : hospital.OrganisationName.contains(self.searchQuery)
                         }, id: \.OrganisationID) { hospital in
-                            // hospital cell view
-                            HospitalCellListView(model: hospital)
+
+                            NavigationLink(destination: HospitalDetailView(model: hospital)) {
+                                // hospital cell view
+                                HospitalCellListView(model: hospital)
+                            }
                         }
                     }
                 }.id(UUID())

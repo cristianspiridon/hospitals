@@ -8,8 +8,6 @@ target 'Hospitals' do
   # Pods for Hospitals
 
 pod 'SwiftFormat/CLI'
-pod 'Realm'
-pod 'RealmSwift'
 pod 'CSV.swift'
 
   target 'HospitalsTests' do

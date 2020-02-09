@@ -1,31 +1,20 @@
 PODS:
   - CSV.swift (2.4.2)
-  - Realm (4.3.0):
-    - Realm/Headers (= 4.3.0)
-  - Realm/Headers (4.3.0)
-  - RealmSwift (4.3.0):
-    - Realm (= 4.3.0)
   - SwiftFormat/CLI (0.43.5)
 
 DEPENDENCIES:
   - CSV.swift
-  - Realm
-  - RealmSwift
   - SwiftFormat/CLI
 
 SPEC REPOS:
   trunk:
     - CSV.swift
-    - Realm
-    - RealmSwift
     - SwiftFormat
 
 SPEC CHECKSUMS:
   CSV.swift: 9670cc1b3e3f01e9eebb1aeb603b17b4459e7493
-  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
-  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
   SwiftFormat: 352ea545e3e13cfd7a449e621c1f3c2e244d4906
 
-PODFILE CHECKSUM: dc0a20280fd665ad9456e0af6d09a67eafbe50ca
+PODFILE CHECKSUM: a0f0a2f6f83d27bf3e33db34c31e78fa409078b6
 
 COCOAPODS: 1.8.4

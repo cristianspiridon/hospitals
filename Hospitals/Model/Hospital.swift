@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import MapKit
+import UIKit
 
 struct Hospital: Decodable {
     let OrganisationID: Int
@@ -34,6 +36,13 @@ struct Hospital: Decodable {
 }
 
 extension Hospital {
+    func coordinates() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(
+            latitude: Double(Latitude)!,
+            longitude: Double(Longitude)!
+        )
+    }
+
     static func sample() -> Hospital {
         return Hospital(OrganisationID: 17970,
                         OrganisationCode: "NDA07",

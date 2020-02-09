@@ -10,6 +10,8 @@
 		0530FB55D8EE13DAA9611954 /* Pods_Hospitals_HospitalsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC450E9BAA863DA4CB70BAA /* Pods_Hospitals_HospitalsUITests.framework */; };
 		575950D18EF8F34F81ECAD6C /* Pods_HospitalsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AF51D9AA9FCFF1AC0F8483 /* Pods_HospitalsTests.framework */; };
 		89CFC769C6D9340BA127519C /* Pods_Hospitals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C54229444EC443A40F31F47 /* Pods_Hospitals.framework */; };
+		F143314A23F07388009AC17E /* HospitalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143314923F07388009AC17E /* HospitalDetailView.swift */; };
+		F143314E23F07611009AC17E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143314D23F07611009AC17E /* MapView.swift */; };
 		F145AC5B23F025AD006CB158 /* HospitalsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC5A23F025AD006CB158 /* HospitalsEndpoint.swift */; };
 		F145AC5D23F02719006CB158 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC5C23F02719006CB158 /* Network.swift */; };
 		F145AC6023F0276B006CB158 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC5F23F0276B006CB158 /* Hospital.swift */; };
@@ -55,6 +57,8 @@
 		BC48CA66C61FE7B58A6D9E1B /* Pods-Hospitals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitals.debug.xcconfig"; path = "Target Support Files/Pods-Hospitals/Pods-Hospitals.debug.xcconfig"; sourceTree = "<group>"; };
 		D6EE534433DD463BA2848704 /* Pods-Hospitals-HospitalsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hospitals-HospitalsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hospitals-HospitalsUITests/Pods-Hospitals-HospitalsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E51EC016B888CFC4AF4A0146 /* Pods-HospitalsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalsTests.debug.xcconfig"; path = "Target Support Files/Pods-HospitalsTests/Pods-HospitalsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F143314923F07388009AC17E /* HospitalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalDetailView.swift; sourceTree = "<group>"; };
+		F143314D23F07611009AC17E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F145AC5A23F025AD006CB158 /* HospitalsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsEndpoint.swift; sourceTree = "<group>"; };
 		F145AC5C23F02719006CB158 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		F145AC5F23F0276B006CB158 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				F193631723F01956000D3ABC /* ContentView.swift */,
 				F145AC6423F03637006CB158 /* HospitalListView.swift */,
 				F145AC6B23F0586C006CB158 /* HospitalCellListView.swift */,
+				F143314923F07388009AC17E /* HospitalDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F145AC6E23F06766006CB158 /* SearchBar.swift */,
+				F143314D23F07611009AC17E /* MapView.swift */,
 			);
 			path = UIViewRepresentable;
 			sourceTree = "<group>";
@@ -509,7 +515,9 @@
 				F145AC5D23F02719006CB158 /* Network.swift in Sources */,
 				F193631423F01956000D3ABC /* AppDelegate.swift in Sources */,
 				F145AC6823F03668006CB158 /* HospitalListViewModel.swift in Sources */,
+				F143314E23F07611009AC17E /* MapView.swift in Sources */,
 				F145AC6A23F036FC006CB158 /* HospitalsDataStore.swift in Sources */,
+				F143314A23F07388009AC17E /* HospitalDetailView.swift in Sources */,
 				F145AC6023F0276B006CB158 /* Hospital.swift in Sources */,
 				F145AC6523F03637006CB158 /* HospitalListView.swift in Sources */,
 				F193631623F01956000D3ABC /* SceneDelegate.swift in Sources */,
