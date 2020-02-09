@@ -16,6 +16,8 @@
 		F145AC6523F03637006CB158 /* HospitalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC6423F03637006CB158 /* HospitalListView.swift */; };
 		F145AC6823F03668006CB158 /* HospitalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC6723F03668006CB158 /* HospitalListViewModel.swift */; };
 		F145AC6A23F036FC006CB158 /* HospitalsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC6923F036FC006CB158 /* HospitalsDataStore.swift */; };
+		F145AC6C23F0586D006CB158 /* HospitalCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC6B23F0586C006CB158 /* HospitalCellListView.swift */; };
+		F145AC6F23F06766006CB158 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145AC6E23F06766006CB158 /* SearchBar.swift */; };
 		F193631423F01956000D3ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193631323F01956000D3ABC /* AppDelegate.swift */; };
 		F193631623F01956000D3ABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193631523F01956000D3ABC /* SceneDelegate.swift */; };
 		F193631823F01956000D3ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193631723F01956000D3ABC /* ContentView.swift */; };
@@ -59,6 +61,8 @@
 		F145AC6423F03637006CB158 /* HospitalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListView.swift; sourceTree = "<group>"; };
 		F145AC6723F03668006CB158 /* HospitalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalListViewModel.swift; sourceTree = "<group>"; };
 		F145AC6923F036FC006CB158 /* HospitalsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsDataStore.swift; sourceTree = "<group>"; };
+		F145AC6B23F0586C006CB158 /* HospitalCellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCellListView.swift; sourceTree = "<group>"; };
+		F145AC6E23F06766006CB158 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		F193631023F01956000D3ABC /* Hospitals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hospitals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F193631323F01956000D3ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F193631523F01956000D3ABC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,8 +160,10 @@
 		F145AC6123F035E9006CB158 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F145AC6D23F06750006CB158 /* UIViewRepresentable */,
 				F193631723F01956000D3ABC /* ContentView.swift */,
 				F145AC6423F03637006CB158 /* HospitalListView.swift */,
+				F145AC6B23F0586C006CB158 /* HospitalCellListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 				F145AC6723F03668006CB158 /* HospitalListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F145AC6D23F06750006CB158 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				F145AC6E23F06766006CB158 /* SearchBar.swift */,
+			);
+			path = UIViewRepresentable;
 			sourceTree = "<group>";
 		};
 		F193630723F01956000D3ABC = {
@@ -491,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F145AC6C23F0586D006CB158 /* HospitalCellListView.swift in Sources */,
 				F145AC5D23F02719006CB158 /* Network.swift in Sources */,
 				F193631423F01956000D3ABC /* AppDelegate.swift in Sources */,
 				F145AC6823F03668006CB158 /* HospitalListViewModel.swift in Sources */,
@@ -499,6 +514,7 @@
 				F145AC6523F03637006CB158 /* HospitalListView.swift in Sources */,
 				F193631623F01956000D3ABC /* SceneDelegate.swift in Sources */,
 				F145AC5B23F025AD006CB158 /* HospitalsEndpoint.swift in Sources */,
+				F145AC6F23F06766006CB158 /* SearchBar.swift in Sources */,
 				F193631823F01956000D3ABC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

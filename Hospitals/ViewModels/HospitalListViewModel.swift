@@ -10,19 +10,21 @@ import Foundation
 
 class HospitalListViewModel: ObservableObject {
     @Published var hospitals: [Hospital]
+
     private let dataStore: HospitalsDataStore
 
-    init(dataStore: HospitalsDataStore) {
+    init(dataStore: HospitalsDataStore, hospitals: [Hospital] = []) {
         self.dataStore = dataStore
-        hospitals = []
+        self.hospitals = hospitals
     }
 
     func loadHospitals() {
         dataStore.loadHospitals { [weak self] result in
-            print("Load hospitals")
             switch result {
             case let .success(hospitals):
-                self?.hospitals = hospitals
+                DispatchQueue.main.async {
+                    self?.hospitals = hospitals
+                }
             case let .failure(error):
                 print("Ops we have an error \(error.localizedDescription)")
             }

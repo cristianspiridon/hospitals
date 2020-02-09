@@ -12,10 +12,11 @@ typealias HospitalResponse = (Result<[Hospital], NetworkError>) -> Void
 
 final class HospitalsDataStore {
     private let network: Network
-//    private let persistence:RealmService
+    private var allHospitals: [Hospital]
 
     init(network: Network = Network()) {
         self.network = network
+        allHospitals = []
     }
 
     func loadHospitals(completion: @escaping HospitalResponse) {
@@ -26,6 +27,7 @@ final class HospitalsDataStore {
             }
 
             if case let Result.success(hospitals) = result {
+                self?.allHospitals = hospitals
                 completion(.success(hospitals))
             }
         }
@@ -34,6 +36,9 @@ final class HospitalsDataStore {
 
 private extension Network {
     func fetchHospitalsFromCloud(completion: @escaping HospitalResponse) {
-        fetchModel(endpoint: .hospitals, completion: completion)
+        fetchCSVModel(endpoint: .hospitals, completion: completion)
     }
+
+    // func fetchHospitalsFromLocalDisk()
+    // func fetchHospitalsFromPersistence()
 }
