@@ -38,7 +38,4 @@ private extension Network {
     func fetchHospitalsFromCloud(completion: @escaping HospitalResponse) {
         fetchCSVModel(endpoint: .hospitals, completion: completion)
     }
-
-    // func fetchHospitalsFromLocalDisk()
-    // func fetchHospitalsFromPersistence()
 }
